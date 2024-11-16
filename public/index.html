@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JmJunior - Gravando o Mundo</title>
+    <link rel="stylesheet" href="./components/css/main.css">
+    <link rel="stylesheet" href="./components/css/ballsWays.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./components/img/J.png" type="image/x-icon">
+</head>
+<body>
+    <div class="black">-</div>
+
+    <div class="imageBackground">
+        <img src="./components/img/image_1.jpg" alt="" id="imageMethod">
+    </div>
+
+    <div class="videoBackground">
+        <video autoplay muted loop disablePictureInPicture playinline id="videoMethod">
+            <source src="./components/videos/video_1.mp4" type="video/mp4" id="backVideo">
+        </video>
+    </div>
+
+    <nav>
+        <h1 id="titleSiteM">JM</h1>
+        <h1 id="titleSiteJunior">JUNIOR</h1>
+    </nav>
+
+    <div id="contents">
+        <div id="container1">
+            <p id="keyP1"></p>
+            <p id="PrincipalSentence"></p>
+            <p id="keyP2"></p>
+        </div>
+        
+        <div id="ballsWay">
+            <p>_</p>
+            <p>_</p>
+            <p>_</p>
+        </div>
+
+        <div id="containerImages">
+            <div class="imageBox" id="box1" data-aos="fade-left">
+                <img src="./components/img/image_1.jpg" alt="" id="img1">
+                <div id="boxWayConnectLeft">
+                    <div>-</div>
+                    <div>-</div>
+                </div>
+            </div>
+            <div class="imageBox" id="box2" data-aos="fade-right">
+                <div id="boxWayConnectRight">
+                    <div>-</div>
+                    <div>-</div>
+                </div>
+                <img src="./components/img/image_3.jpg" alt="" id="img2">
+            </div>
+            <div class="imageBox" id="box3" data-aos="fade-left">
+                <img src="./components/img/image_4.jpg" alt="" id="img3">
+                <div id="boxWayConnectLeft">
+                    <div>-</div>
+                    <div>-</div>
+                </div>
+            </div>
+            <div class="imageBox" id="box4" data-aos="fade-right">
+                <div id="boxWayConnectRight">
+                    <div>-</div>
+                    <div>-</div>
+                </div>
+                <img src="./components/img/image_9.jpg" alt="" id="img4">
+            </div>
+        </div>
+
+        <h1 class="title">Equipamento</h1>
+        <p class="info">Clique no Drone para saber mais.</p>
+        <div id="containerEquipment">
+            
+            <div class="EquipmentInfo" id="Avata2" data-aos="fade-up">
+                <img src="./components/img/droneAvata2.png" alt="" id="droneFly">
+                <h2>DJI Avata 2</h2>
+                <p>Usado em Voos com movimento, velocidade e adrenalina.</p>
+            </div>
+
+            <div class="EquipmentInfo" id="Mini3" data-aos="fade-up" data-aos-delay="300">
+                <img src="./components/img/droneMini3.png" alt="" id="droneFly">
+                <h2>DJI Mini 3</h2>
+                <p>Usado em Voos simples, ambientais e tranquilos.</p>  
+            </div>
+        </div>
+
+        <h1 class="title">Videos</h1>
+        <div id="containerVideos">
+            <video autoplay muted loop disablePictureInPicture class="boxVideo" id="bv1">
+                <source src="./components/videos/videoV_1.mp4">
+            </video>
+            <video autoplay muted loop disablePictureInPicture class="boxVideo" id="bv2">
+                <source src="./components/videos/videoV_2.mp4">
+            </video>
+            <video autoplay muted loop disablePictureInPicture class="boxVideo" id="bv3">
+                <source src="./components/videos/videoV_3.mp4">
+            </video>
+            <div class="more">
+                <h4>Ver mais.</h4>
+                <p>no instagram</p>
+            </div>
+        </div>
+
+        <h1 class="title">Quem sou eu.</h1>
+        <div id="containerWhoAmI">
+            <div id="columnImg">
+                <img src="./components/img/jr02.jpg" alt="" data-aos="fade-left">
+                <img src="./components/img/jr01.jpg" alt="" data-aos="fade-up" data-aos-delay="2000">
+                <img src="./components/img/jr03.jpg" alt="" data-aos="fade-right" data-aos-delay="1000">
+            </div>
+            <div id="whoAmInfo">
+                <h2>Olá, Eu sou o Junior.</h2>
+                <p>Um Estusiasta de Drones, Gosto de Marcar momentos, acontecimentos e belezas naturais do dia a dia.</p>
+                <h6>Gostou do meu Trabalho?</h6>
+                <button id="meetZap">WhatsApp</button>
+                <button id="meetInsta">Instagram</button>
+            </div>
+        </div>
+        <form id="formOrc" method="POST">
+            <h2 class="title">Solicite um Orçamento</h2>
+
+            <div>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="typeService">Tipo de Serviço:</label>
+                <select name="typeService" id="tipo-servico">
+                    <option value="eventos">Filmagem de Eventos</option>
+                    <option value="fotos">Fotos Aéreas</option>
+                    <option value="videos">Filmagens Aéreas</option>
+                    <option value="inspecao">Inspeção de Obras</option>
+                </select>
+            </div>
+            -
+            <label for="message">Detalhes Adicionais:</label>
+            <textarea name="message" id="mensagem"></textarea>
+
+            <button type="submit">Enviar Orçamento</button>
+        </form>
+    </div>
+
+    <footer>
+        <div id="footerONE">
+            <h1 id="titleFooter">JUNIOR</h1>
+            <p>2024 &copy; JR</p>
+        </div>
+        <div id="footerTWO">
+            <p>Site desenvolvido por</p>
+            <img src="./components/img/gabriel.png" alt="" id="creator">
+        </div>
+    </footer>
+
+    <script src="./components/js/changeSentences.js"></script>
+    <script src="./components/js/changeVideo.js"></script>
+    <script src="./components/js/goToLink.js"></script>
+    <script src="./components/js/randomizerImages.js"></script>
+    <script src="./components/js/SendForm.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
