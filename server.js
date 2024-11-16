@@ -11,9 +11,10 @@ app.use(bodyParser.json())
 
 
 const transport = nodemailer.createTransport({
+    service: 'gmail',
     host: 'smtp.gmail.com',
     port: 465,
-    service: true,
+    secure: true,
     auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS
@@ -29,16 +30,16 @@ app.post('/send-email', async(req, res) => {
         subject: 'Pedido de Orçamento',
         text:
         `
-        Nome: ${nome}
+        Nome: ${name}
         E-mail: ${email}
-        Tipo de Serviço: ${tipoServico}
+        Tipo de Serviço: ${typeService}
         Mensagem:
-        ${mensagem}
+        ${message}
         `
     }
 
     try {
-        await transporter.sendMail(mailOptions);
+        await transport.sendMail(mailOptions);
         res.status(200).json({ message: 'E-mail enviado com sucesso!' });
     } catch (error) {
         console.error('Erro ao enviar e-mail:', error);
