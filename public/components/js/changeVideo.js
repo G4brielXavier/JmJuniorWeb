@@ -19,7 +19,6 @@ var videosPATH = [
     "./components/videos/video_6.mp4",
     "./components/videos/video_7.mp4",
     "./components/videos/video_8.mp4",
-    "./components/videos/video_9.mp4",
 ]
 
 // vertical videos
@@ -27,7 +26,6 @@ var videosVertical = [
     "./components/videos/videoV_1.mp4",
     "./components/videos/videoV_2.mp4",
     "./components/videos/videoV_3.mp4",
-    "./components/videos/videoV_4.mp4",
 ]
 
 var changeVideoNormal = (min, max) => {
