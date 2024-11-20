@@ -1,7 +1,11 @@
 
 
-function goTo(url) {
-    window.open(url)
+function goTo(url, notopen = false) {
+    if (!notopen) {
+        window.open(url)
+    } else {
+        window.location.assign(url)
+    }
 }
 
 
@@ -33,5 +37,10 @@ document.querySelector("#meetInsta").addEventListener("click", (e) => {
 
 document.querySelector("#creator").addEventListener("click", (e) => {
     goTo("https://dotxavierket.vercel.app")
+    e.preventDefault()
+})
+
+document.querySelector("#backButton").addEventListener("click", (e) => {
+    goTo("https://jmjunioroficial.vercel.app", true)
     e.preventDefault()
 })

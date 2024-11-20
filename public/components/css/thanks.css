@@ -1,0 +1,31 @@
+.blockThanks {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#backButton {
+    border: 1px solid #fff;
+    background-color: transparent;
+    padding: 10px 20px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#backButton:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+@media (max-width:1000px) {
+    .blockThanks {
+        margin-top: 40%;
+    }
+}
